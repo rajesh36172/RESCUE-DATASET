@@ -132,6 +132,32 @@ Three annotators contributed to the dataset collection and annotation process. A
 
 Unlike datasets that partially rely on pre-trained object detectors, all annotations in RESCUE are manually generated.
 
+---
+## Dataset Structure
+RESCUE/
+├── videos/
+│   ├── video_0001.mp4
+│   ├── video_0002.mp4
+│   └── ...
+│
+├── frames/
+│   ├── video_0001/
+│   │   ├── 000001.jpg
+│   │   ├── 000002.jpg
+│   │   └── ...
+│   ├── video_0002/
+│   └── ...
+│
+├── annotations/
+│   ├── object_annotations.json
+│   ├── relationship_annotations.json
+│   ├── train_split.json
+│   └── test_split.json
+│
+├── metadata/
+│   └── object_classes.txt
+│
+└── README.md
 
 ---
 
