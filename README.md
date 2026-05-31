@@ -25,7 +25,7 @@ The dataset consists of **500 hostage-crime videos** collected from diverse sour
 
 The RESCUE dataset and annotation files can be downloaded from:
 
-**Dataset Link:** `https://drive.google.com/drive/folders/15UPPlmCARFzwZwkZgRaC1L5SCZrqYk1-?usp=sharing`
+[Dataset Download](https://drive.google.com/drive/folders/15UPPlmCARFzwZwkZgRaC1L5SCZrqYk1-?usp=sharing)
 
 After downloading, organize the files as follows:
 
