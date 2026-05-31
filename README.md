@@ -7,6 +7,27 @@ The dataset consists of **500 hostage-crime videos** collected from diverse sour
 
 ---
 
+
+---
+
+## Benchmark Model: STORM-Net
+
+The proposed **STORM-Net** framework for **Dynamic Scene Graph Generation (DSGG)** is provided along with the RESCUE dataset to facilitate benchmarking and reproducible research.
+
+STORM-Net is developed on top of the **STTran** architecture and extends it for relational scene understanding in complex hostage-event scenarios. The implementation includes training, evaluation, and inference scripts, together with configuration files required to reproduce the experimental results reported in the paper.
+
+The STORM-Net code can be downloaded from:
+
+[STORM-Net Download](https://drive.google.com/drive/folders/1Nqpu6cQ6idQKM1TL7nmDzJhRnTrec_a1?usp=drive_link)
+
+A detailed usage guide is provided in the accompanying `README.md` file of the STORM-Net repository.
+
+---
+
+
+
+
+
 ## Dataset Statistics
 
 | Property | Value |
