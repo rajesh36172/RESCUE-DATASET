@@ -1,48 +1,53 @@
-# RESCUE-DATASET
 # RESCUE Dataset
+## Relational Scene Understanding in Complex Hostage Events
 
-## Relational Scene Understanding in Complex Hostage Events (RESCUE)
+RESCUE is a benchmark dataset designed for **Dynamic Scene Graph Generation (DSGG)** and **Relational Scene Understanding** in realistic hostage and rescue scenarios. Unlike existing datasets that primarily focus on everyday human activities, RESCUE emphasizes complex crime-oriented interactions involving multiple individuals, weapons, emotional cues, and dynamically evolving relationships.
 
-The **RESCUE** dataset is a benchmark dataset designed for **Dynamic Scene Graph Generation (DSGG)** and **Relational Scene Understanding** in realistic hostage and rescue scenarios. Unlike existing datasets that primarily focus on daily human activities, RESCUE emphasizes complex crime-oriented interactions involving multiple individuals, weapons, emotional cues, and dynamically evolving relationships.
-
-The dataset contains **500 hostage-crime videos** collected from diverse sources, including real CCTV footage, movie sequences, and manually recreated hostage situations. From these videos, **15,000 representative frames** were densely annotated with object bounding boxes and multi-type relationship labels.
+The dataset consists of **500 hostage-crime videos** collected from diverse sources, including real CCTV footage, movie sequences, and manually recreated hostage situations. From these videos, **15,000 representative frames** were densely annotated with object bounding boxes and multi-type relationship labels.
 
 ---
 
 ## Dataset Statistics
 
-| Property                | Value        |
-| ----------------------- | ------------ |
-| Videos                  | 500          |
-| Annotated Frames        | 15,000       |
-| Object Categories       | 6            |
-| Relationship Categories | 24           |
-| Training Split          | 80%          |
-| Testing Split           | 20%          |
-| Annotation Type         | Fully Manual |
+| Property | Value |
+|-----------|--------|
+| Videos | 500 |
+| Annotated Frames | 15,000 |
+| Object Categories | 6 |
+| Relationship Categories | 24 |
+| Training Split | 80% |
+| Testing Split | 20% |
+| Annotation Type | Fully Manual |
 
 ---
 
-## Download Dataset and Annotations
-Download the RESCUE dataset and annotation files from:
-Dataset Link: <DATASET_LINK>
+## Download
+
+The RESCUE dataset and annotation files can be downloaded from:
+
+**Dataset Link:** `<DATASET_LINK>`
+
 After downloading, organize the files as follows:
+
+```text
 dataset/
 └── rescue/
     ├── videos/
     ├── frames/
     ├── annotations/
     └── metadata/
-Place all videos under:
-dataset/rescue/videos/
-Place all annotation files under:
-dataset/rescue/annotations/
+```
+
+Place:
+
+- Videos under `dataset/rescue/videos/`
+- Annotation files under `dataset/rescue/annotations/`
 
 ---
 
 ## Object Categories
 
-The dataset contains six frequently occurring object categories:
+The dataset contains six object categories:
 
 1. hostage
 2. hostage_taker
@@ -51,48 +56,48 @@ The dataset contains six frequently occurring object categories:
 5. shot_gun
 6. knife
 
-All object categories represent independent entities. Part-based object annotations are excluded to maintain annotation consistency.
+All object categories represent independent entities. Part-based object annotations are intentionally excluded to maintain annotation consistency.
 
 ---
 
 ## Relationship Categories
 
-Relationships are organized into three semantic groups:
+Relationships are grouped into three semantic categories.
 
 ### Attention Relationships
 
-* lookingat
-* notlookingat
-* fearful_gaze
-* pleading_gaze
-* threatening_gaze
-* None
+- lookingat
+- notlookingat
+- fearful_gaze
+- pleading_gaze
+- threatening_gaze
+- None
 
 ### Spatial Relationships
 
-* infrontof
-* behind
-* beside
-* between
-* cornered_by
-* crouching_behind
+- infrontof
+- behind
+- beside
+- between
+- cornered_by
+- crouching_behind
 
 ### Contact Relationships
 
-* pointing_gun
-* holding_weapon
-* holding_hostage
-* tying
-* dragging
-* covering_mouth
-* hitting
-* shielding
-* touching
-* kneeling
-* hands_up
-* no_contact
+- pointing_gun
+- holding_weapon
+- holding_hostage
+- tying
+- dragging
+- covering_mouth
+- hitting
+- shielding
+- touching
+- kneeling
+- hands_up
+- no_contact
 
-These relationship categories capture spatial dependencies, emotional interactions, and physical actions occurring in complex hostage situations.
+These relationships capture spatial dependencies, emotional interactions, and physical actions occurring in complex hostage scenarios.
 
 ---
 
@@ -100,40 +105,43 @@ These relationship categories capture spatial dependencies, emotional interactio
 
 Videos were collected from multiple sources:
 
-* Real crime-scene CCTV footage
-* Movie sequences
-* Recreated hostage scenarios
+- Real crime-scene CCTV footage
+- Movie sequences
+- Recreated hostage scenarios
 
-To generate realistic interactions and diverse relational activities, **20 volunteers** participated in staged hostage-scene recordings conducted in indoor environments.
+To increase interaction diversity and realism, **20 volunteers** participated in staged hostage-scene recordings conducted in indoor environments.
 
 ---
 
 ## Annotation Process
 
-The RESCUE dataset is **entirely hand-labelled**.
+The RESCUE dataset is **fully manually annotated**.
 
 ### Object Annotation
 
 For every selected frame:
 
-* All relevant objects are manually identified.
-* Ground-truth bounding boxes are annotated.
-* Corresponding object categories are assigned.
+- Relevant objects are manually identified.
+- Ground-truth bounding boxes are annotated.
+- Object category labels are assigned.
 
 ### Relationship Annotation
 
 For every relevant object pair:
 
-* Attention relationships are annotated.
-* Spatial relationships are annotated.
-* Contact relationships are annotated.
+- Attention relationships are annotated.
+- Spatial relationships are annotated.
+- Contact relationships are annotated.
 
-Three annotators contributed to the dataset collection and annotation process. Additional manual verification and cross-checking were performed to ensure annotation quality, consistency, and reliability.
+Three annotators contributed to the annotation process. Additional verification and cross-checking were performed to ensure annotation quality, consistency, and reliability.
 
-Unlike datasets that partially rely on pre-trained object detectors, all annotations in RESCUE are manually generated.
+Unlike several existing datasets that partially rely on pre-trained object detectors, all annotations in RESCUE are manually generated.
 
 ---
+
 ## Dataset Structure
+
+```text
 RESCUE/
 ├── videos/
 │   ├── video_0001.mp4
@@ -158,16 +166,15 @@ RESCUE/
 │   └── object_classes.txt
 │
 └── README.md
+```
 
 ---
 
 ## Annotation Format
 
-Each annotated frame contains:
+### Object Annotation
 
-### Objects
-
-```python
+```json
 {
     "bbox": [x1, y1, x2, y2],
     "class": "hostage",
@@ -175,9 +182,9 @@ Each annotated frame contains:
 }
 ```
 
-### Relationships
+### Relationship Annotation
 
-```python
+```json
 {
     "subject_id": 1,
     "object_id": 2,
@@ -191,24 +198,37 @@ Each annotated frame contains:
 
 ## Benchmark Tasks
 
-The dataset supports:
+The dataset supports research in:
 
-* Dynamic Scene Graph Generation (DSGG)
-* Video Visual Relationship Detection (VidVRD)
-* Human-Object Interaction Recognition (HOI)
-* Relational Scene Understanding
-* Crime Scene Analysis
-* Multi-Agent Activity Understanding
-* Temporal Relationship Prediction
+- Dynamic Scene Graph Generation (DSGG)
+- Video Visual Relationship Detection (VidVRD)
+- Human-Object Interaction Recognition (HOI)
+- Relational Scene Understanding
+- Crime Scene Analysis
+- Multi-Agent Activity Understanding
+- Temporal Relationship Prediction
+
+---
+
+## Citation
+
+If you use RESCUE in your research, please cite:
+
+```bibtex
+@article{rescue2026,
+  title={RESCUE: Relational Scene Understanding in Complex Hostage Events},
+  author={Yadav, Rajeshwar and others},
+  journal={},
+  year={2026}
+}
+```
 
 ---
 
 ## Contact
 
-For questions regarding the dataset, please contact:
+**Rajeshwar Yadav**  
+Indian Institute of Technology Patna (IIT Patna)  
+Email: rajeshwar_2021cs06@iitp.ac.in
 
-```
-Author Name: Rajeshwar Yadav
-Institution: IITP
-email: rajeshwar_2021cs06@iitp.ac.in
-```
+For questions, suggestions, or bug reports regarding the dataset, please feel free to contact the authors.
