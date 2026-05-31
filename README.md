@@ -5,12 +5,11 @@ RESCUE is a benchmark dataset designed for **Dynamic Scene Graph Generation (DSG
 
 The dataset consists of **500 hostage-crime videos** collected from diverse sources, including real CCTV footage, movie sequences, and manually recreated hostage situations. From these videos, **15,000 representative frames** were densely annotated with object bounding boxes and multi-type relationship labels.
 
----
 
 
 ---
 
-## Benchmark Model: STORM-Net
+## Proposed Model: STORM-Net
 
 The proposed **STORM-Net** framework for **Dynamic Scene Graph Generation (DSGG)** is provided along with the RESCUE dataset to facilitate benchmarking and reproducible research.
 
