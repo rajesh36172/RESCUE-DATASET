@@ -115,35 +115,6 @@ Three annotators contributed to the dataset collection and annotation process. A
 
 Unlike datasets that partially rely on pre-trained object detectors, all annotations in RESCUE are manually generated.
 
----
-
-## Dataset Characteristics
-
-The RESCUE dataset is designed to capture:
-
-* Multi-person interactions
-* Hostage-taking events
-* Rescue operations
-* Emotional behaviors
-* Weapon-related interactions
-* Dynamic scene evolution
-* Occlusions
-* Viewpoint variations
-* Crowded environments
-* Overlapping activities
-
-These challenges make RESCUE suitable for evaluating advanced dynamic scene graph generation and relational reasoning methods.
-
----
-
-## Dataset Split
-
-The dataset is randomly divided into:
-
-| Split    | Percentage |
-| -------- | ---------- |
-| Training | 80%        |
-| Testing  | 20%        |
 
 ---
 
