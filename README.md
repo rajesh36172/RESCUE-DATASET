@@ -160,33 +160,12 @@ The dataset supports:
 
 ---
 
-## Citation
-
-If you use the RESCUE dataset in your research, please cite:
-
-```bibtex
-@article{rescue2026,
-  title={RESCUE: Relational Scene Understanding in Complex Hostage Events for Dynamic Scene Graph Generation},
-  author={Author Names},
-  journal={IEEE Transactions on Artificial Intelligence},
-  year={2026}
-}
-```
-
----
-
-## License
-
-The RESCUE dataset is released for academic research purposes only. Commercial use is prohibited without prior permission.
-
----
-
 ## Contact
 
 For questions regarding the dataset, please contact:
 
 ```
-Author Name
-Institution
-email@domain.edu
+Author Name: Rajeshwar Yadav
+Institution: IITP
+email: rajeshwar_2021cs06@iitp.ac.in
 ```
