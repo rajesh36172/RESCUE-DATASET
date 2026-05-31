@@ -23,6 +23,23 @@ The dataset contains **500 hostage-crime videos** collected from diverse sources
 
 ---
 
+## Download Dataset and Annotations
+Download the RESCUE dataset and annotation files from:
+Dataset Link: <DATASET_LINK>
+After downloading, organize the files as follows:
+dataset/
+└── rescue/
+    ├── videos/
+    ├── frames/
+    ├── annotations/
+    └── metadata/
+Place all videos under:
+dataset/rescue/videos/
+Place all annotation files under:
+dataset/rescue/annotations/
+
+---
+
 ## Object Categories
 
 The dataset contains six frequently occurring object categories:
