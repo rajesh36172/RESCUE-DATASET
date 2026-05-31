@@ -186,8 +186,6 @@ RESCUE/
 
 ```json
 {
-    "subject_id": 1,
-    "object_id": 2,
     "attention": "fearful_gaze",
     "spatial": "behind",
     "contact": "holding_hostage"
