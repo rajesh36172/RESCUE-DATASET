@@ -32,7 +32,7 @@ A detailed usage guide is provided in the accompanying `README.md` file of the S
 | Property | Value |
 |-----------|--------|
 | Videos | 500 |
-| Annotated Frames | 15,000 |
+| Annotated Frames | 2500 |
 | Object Categories | 6 |
 | Relationship Categories | 24 |
 | Training Split | 80% |
