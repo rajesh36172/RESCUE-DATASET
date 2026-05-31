@@ -210,21 +210,6 @@ The dataset supports research in:
 
 ---
 
-## Citation
-
-If you use RESCUE in your research, please cite:
-
-```bibtex
-@article{rescue2026,
-  title={RESCUE: Relational Scene Understanding in Complex Hostage Events},
-  author={Yadav, Rajeshwar and others},
-  journal={},
-  year={2026}
-}
-```
-
----
-
 ## Contact
 
 **Rajeshwar Yadav**  
