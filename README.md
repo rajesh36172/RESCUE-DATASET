@@ -3,7 +3,7 @@
 
 RESCUE is a benchmark dataset designed for **Dynamic Scene Graph Generation (DSGG)** and **Relational Scene Understanding** in realistic hostage and rescue scenarios. Unlike existing datasets that primarily focus on everyday human activities, RESCUE emphasizes complex crime-oriented interactions involving multiple individuals, weapons, emotional cues, and dynamically evolving relationships.
 
-The dataset consists of **500 hostage-crime videos** collected from diverse sources, including real CCTV footage, movie sequences, and manually recreated hostage situations. From these videos, **15,000 representative frames** were densely annotated with object bounding boxes and multi-type relationship labels.
+The dataset consists of **500 hostage-crime videos** collected from diverse sources, including real CCTV footage, movie sequences, and manually recreated hostage situations. From these videos, **2500 representative frames** were densely annotated with object bounding boxes and multi-type relationship labels.
 
 
 
